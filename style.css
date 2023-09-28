@@ -282,6 +282,9 @@ div, section, nav, footer, header {
   .g-12 { gap: 12px; }
   .br-btn_radius { border-radius: var(--btn_radius); }
   .b-2-0-0-0 { border: 2px solid rgb(0, 0, 0); }
+  .bg-217-217-217 { background-color: rgb(217, 217, 217); }
+  .w-12 { width: 12px; }
+  .h-12 { height: 12px; }
   .mxw-520 { max-width: 520px; }
   .g-10 { gap: 10px; }
   .bg-201-201-201 { background-color: rgb(201, 201, 201); }
