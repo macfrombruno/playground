@@ -151,8 +151,7 @@ Lorem ipsum dolor sit amet consectetur. Felis lorem volutpat sit malesuada. Tinc
               node.style[change.property] = change.value;
             } else {
               const nodeSelector = '[node_id="I' + baseId + ';' + change.nodeId + '"]';
-              console.log(nodeSelector);
-              node.querySelector(nodeSelector).style[change.property] = change.init;
+              node.querySelector(nodeSelector).style[change.property] = change.value;
             }
           });
         });
