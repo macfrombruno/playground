@@ -150,7 +150,8 @@ Lorem ipsum dolor sit amet consectetur. Felis lorem volutpat sit malesuada. Tinc
             if (change.nodeId === null) {
               node.style[change.property] = change.value;
             } else {
-              const nodeSelector = '[node_id=I' + baseId + ';' + change.nodeId + ']';
+              const nodeSelector = '[node_id="I' + baseId + ';' + change.nodeId + '"]';
+              console.log(nodeSelector);
               node.querySelector(nodeSelector).style[change.property] = change.init;
             }
           });
@@ -160,7 +161,7 @@ Lorem ipsum dolor sit amet consectetur. Felis lorem volutpat sit malesuada. Tinc
             if (change.nodeId === null) {
               node.style[change.property] = change.init;
             } else {
-              const nodeSelector = '[node_id=I' + baseId + ';' + change.nodeId + ']';
+              const nodeSelector = '[node_id="I' + baseId + ';' + change.nodeId + '"]';
               node.querySelector(nodeSelector).style[change.property] = change.init;
             }
           });
