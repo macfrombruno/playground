@@ -239,6 +239,7 @@ div, section, nav, footer, header, a {
 --left-side-space: 0px;
 --h3_bottom_space: 16px;
 --section_vert-space: 64px;
+--section_how-space: 40px;
 --section_horizontal-space: 64px;
 --h1_bottom-space: 16px;
 }
@@ -301,10 +302,20 @@ div, section, nav, footer, header, a {
   .mw-card_min-w { min-width: var(--card_min-w); }
   .b-1-0-0-0 { border: 1px solid rgb(0, 0, 0); }
   .pb-h3_bottom_space { padding-bottom: var(--h3_bottom_space); }
+  .jc-c { justify-content: center ; }
+  .bg-0-0-0-0_1 { background-color: rgb(0, 0, 0, 0.1); }
+  .d-n { display: none ; }
+  .h-726 { height: 726px; }
+  .w-440 { width: 440px; }
+  .mxw-600 { max-width: 600px; }
+  .bg-223-223-223 { background-color: rgb(223, 223, 223); }
+  .w-40 { width: 40px; }
+  .h-40 { height: 40px; }
   @media(max-width: 1190px) {
 .t_g-24 { gap: 24px; }
   .t_mxw-1000 { max-width: 1000px; }
   }
 @media(max-width: 720px) {
 .m_jc-s { justify-content: start ; }
+  .m_g-8 { gap: 8px; }
   }
