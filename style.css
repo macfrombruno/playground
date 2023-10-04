@@ -214,12 +214,12 @@ div, section, nav, footer, header, a {
 --img-hero: 446px;
 --btn_radius: 8px;
 --hero-side-image_height: 500px;
---card_space: 30px;
+--card_space: 32px;
 --grid_gap: 24px;
 --containerr_max-w: 1280px;
 --left-side-space: 40px;
 --btn-group_top-space: 40px;
---radius-medium: 32px;
+--radius-medium: 24px;
 --h3_bottom_space: 20px;
 --btn-group_gap: 12px;
 --card_min-w: 300px;
@@ -230,6 +230,9 @@ div, section, nav, footer, header, a {
 --section_how-space: 80px;
 --section_horizontal-space: 80px;
 --h1_bottom-space: 18px;
+--border-black: rgb(0, 0, 0);
+--bg-gray: rgb(170, 170, 170);
+--bg-white: rgb(255, 255, 255);
 }
 @media(max-width: 1190px) {
 :root {
@@ -237,6 +240,7 @@ div, section, nav, footer, header, a {
 --hero-side-image_height: 260px;
 --card_space: 28px;
 --left-side-space: 0px;
+--radius-medium: 12px;
 --h3_bottom_space: 16px;
 --section_vert-space: 64px;
 --section_how-space: 40px;
@@ -250,14 +254,14 @@ div, section, nav, footer, header, a {
 --card_space: 20px;
 --grid_gap: 16px;
 --btn-group_top-space: 24px;
---radius-medium: 16px;
+--radius-medium: 8px;
 --h3_bottom_space: 12px;
 --card_min-w: 240px;
 --header_bottom-space: 48px;
 --section_vert-space: 60px;
 --btn_vert-space: 8px;
 --btn_hor-space: 24px;
---section_how-space: 20px;
+--section_how-space: 16px;
 --section_horizontal-space: 20px;
 --h1_bottom-space: 12px;
 }
@@ -301,6 +305,11 @@ div, section, nav, footer, header, a {
   .pr-card_space { padding-right: var(--card_space); }
   .mw-card_min-w { min-width: var(--card_min-w); }
   .b-1-0-0-0 { border: 1px solid rgb(0, 0, 0); }
+  .pb-12 { padding-bottom: 12px; }
+  .pt-8 { padding-top: 8px; }
+  .pb-8 { padding-bottom: 8px; }
+  .pl-12 { padding-left: 12px; }
+  .pr-12 { padding-right: 12px; }
   .pb-h3_bottom_space { padding-bottom: var(--h3_bottom_space); }
   .jc-c { justify-content: center ; }
   .bg-0-0-0-0_1 { background-color: rgb(0, 0, 0, 0.1); }
