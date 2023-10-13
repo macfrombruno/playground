@@ -142,6 +142,24 @@ Lorem ipsum dolor sit amet consectetur. Felis lorem volutpat sit malesuada. Tinc
         });
       });
     
+
+      document.querySelectorAll('[on_hover]').forEach((node) => {
+        let actions = node?.getAttribute('on_hover').split(';-;');
+        let reactions = [];
+        actions.map((action) => {
+          reactions.push({
+            variable: action.split('->')[0],
+            value: action.split('->')[1],
+          });
+          node.addEventListener('mouseenter', () => {
+            node.style.setProperty('--' + action.split('->')[0], action.split('->')[1]);
+            node.style.setProperty('transition', 'all 0.2s');
+          });
+          node.addEventListener('mouseleave', () => {
+            node.style.removeProperty('--' + action.split('->')[0]);
+          });
+        });
+      });
       </script>
         
         </body>
